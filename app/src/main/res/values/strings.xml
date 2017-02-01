@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">Forgot Password ?</string>
+    <string name="donthaveaccount">Don\'t have an account ?</string>
+    <string name="signup">Sign Up</string>
+    <string name="loginwithfacebook">Login with Facebook</string>
+    <string name="or">or</string>
+    <string name="lastname">Last name</string>
+    <string name="error"> field required</string>
+    <string name="firstname">First Name</string>
+    <string name="alreadyhaveanaccount">Already have an account.</string>
+    <string name="addgiftcards">Add Gift Cards</string>
+    <string name="search">Search</string>
+</resources>

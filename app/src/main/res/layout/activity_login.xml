@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cbluser22.testapp.activities.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/toolbar_1"
+        android:background="@android:color/holo_blue_light"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/twenty"
+            android:text="@string/login" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:id="@+id/et_email"
+        android:layout_marginTop="@dimen/twofive"
+        android:layout_below="@+id/toolbar_1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:inputType="textPassword"
+        android:id="@+id/et_password"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/et_email"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotpassword"
+        android:layout_below="@id/et_password"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_forgotpassword"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+        android:textColor="@android:color/holo_blue_light"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:id="@+id/btn_login"
+        android:paddingLeft="@dimen/fifty"
+        android:paddingRight="@dimen/fifty"
+        android:layout_below="@+id/tv_forgotpassword"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btnshape"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fifteen"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donthaveaccount"
+        android:id="@+id/tv_donthaveanaccount"
+        android:layout_below="@+id/btn_login"
+        android:textColor="@android:color/holo_blue_light"
+        android:paddingLeft="@dimen/ninety"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:text="@string/signup"
+        android:id="@+id/tv_signup1"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_toRightOf="@+id/tv_donthaveanaccount"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:id="@+id/tv_or"
+        android:layout_below="@+id/tv_signup1"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fifteen"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/facebooklogin"
+        android:layout_below="@+id/tv_or"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_facebook"
+            android:layout_marginRight="@dimen/twenty"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/iv_fbicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twenty"
+            android:textColor="@android:color/white"
+            android:text="@string/loginwithfacebook"
+
+            android:layout_alignTop="@+id/iv_fbicon"
+            android:layout_toRightOf="@+id/iv_fbicon"
+            android:layout_toEndOf="@+id/iv_fbicon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="0.1dp"
+            android:id="@+id/textView" />
+    </RelativeLayout>
+</RelativeLayout>
